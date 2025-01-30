@@ -1,0 +1,65 @@
+{
+    "bots": [
+        {
+            "token": "bot1",
+            "status": "invisible",
+            "servers": [
+                {
+                    "guildId": " ",
+                    "channelId": " "
+                },
+                {
+                    "guildId": " ",
+                    "channelId": "1330322514114773012"
+                },
+                {
+                    "guildId": " ",
+                    "channelId": " "
+                }
+            ]
+        },
+        {
+            "token": "bot2",
+            "status": "invisible",
+            "servers": [
+                {
+                    "guildId": " ",
+                    "channelId": " "
+                },
+                {
+                    "guildId": " ",
+                    "channelId": "1325901214474436623"
+                },
+                {
+                    "guildId": " ",
+                    "channelId": " "
+                }
+            ]
+        }
+    ],
+    "timers": {
+        "hunt": {
+            "min": 2,
+            "max": 3
+        },
+        "daily": {
+            "min": 7,
+            "max": 8
+        },
+        "battle": {
+            "min": 3,
+            "max": 4
+        },
+        "message": {
+            "interval": 400
+        }
+    },
+    "clientSettings": {
+        "browser": "Chrome",
+        "os": "Windows",
+        "browser_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "browser_version": "120.0.0.0",
+        "os_version": "10",
+        "client_build_number": 201923
+    }
+} 

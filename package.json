@@ -1,0 +1,17 @@
+{
+  "name": "31",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [Discord Selfbot],
+  "author": "Serhat",
+  "license": "ISC",
+  "description": "Discord Selfbot",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.5.1",
+    "node-fetch": "^3.3.2",
+    "tesseract.js": "^4.1.4"
+  }
+}
