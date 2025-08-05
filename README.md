@@ -1,19 +1,18 @@
-# 🐾 Owo Create Bot
+# Owo Create Botu
 
-Discord'daki [OwO Bot](https://owo.bot/) için otomatik "owo create" komutu spamlayan bir bottur. Bu araç, sürekli `owo create` komutu göndererek kasa (crate) toplamanıza yardımcı olur.
-
-> ⚠️ Bu bot sadece eğitim ve deneme amaçlıdır. OwO Bot’un kurallarına ve Discord’un hizmet şartlarına uymak sizin sorumluluğunuzdadır. Lütfen dikkatli kullanın.
+Discord'daki için otomatik "owo create" komutu spamlayan bir bottur. Bu araç, sürekli `owo create` komutu göndererek kasa (daily crate) toplamanıza yardımcı olur.
 
 ## 🚀 Özellikler
 
-- Otomatik olarak `owo create` komutunu gönderir.
+- Otomatik olarak `owo create, owo hunt, owo battle` komutunu gönderir.
 - Belirli aralıklarla çalışır.
-- Kolay kullanım — tek bir token ile başlatılır.
+- Kolay kullanım — yüzlerce token ile çalışabilir.
 
 ## 🧠 Gereksinimler
 
 - Python 3.8 veya üzeri
 - `discord.py-self` kütüphanesi
+- `dicord.js` kütüpanesi
 
 ## 🛠️ Kurulum
 
