@@ -4,10 +4,10 @@ const config = require('./config.json');
 const fetch = require('node-fetch');
 const { createWorker } = require('tesseract.js');
 
-// İstatistik takibi için değişkenler
+// İstatistik
 const stats = new Map();
 
-// Rastgele mesaj seçme fonksiyonu
+// Rastgele mesaj 
 async function getRandomMessage() {
     try {
         const data = await fs.readFile('kelimeler.txt', 'utf8');
@@ -19,7 +19,7 @@ async function getRandomMessage() {
     }
 }
 
-// Kalan süreyi hesaplayan fonksiyon
+// kalan süreyi hesaplama
 function getTimeRemaining(lastTime, intervalHours) {
     if (!lastTime) return 'Henüz kullanılmadı';
     
@@ -106,14 +106,14 @@ class OwoBot {
     async startTasks() {
         const server = this.config.servers[0];
         
-        // XP kontrolünü ekle
+        // XP kontrolü
         setTimeout(() => this.checkOwOProfile(), 0);
         setTimeout(() => this.startHuntTask(server), 15000);
         setTimeout(() => this.startDailyTask(server), 30000);
         setTimeout(() => this.startBattleTask(server), 45000);
         setTimeout(() => this.startMessageTask(server), 60000);
         
-        // Her saat başı XP kontrolü yap
+        // saat başı xp kontrolü
         setInterval(() => this.checkOwOProfile(), 60 * 60 * 1000);
         
         console.log(`[${this.client.user.tag}] Komutlar sirayla baslatiliyor...`);
@@ -262,7 +262,7 @@ class OwoBot {
                 try {
                     const { data: { text } } = await worker.recognize(attachment.url);
                     
-                    // İki farklı format için kontrol
+                    // kontrol
                     let statsMatch = text.match(/Rank:\s*#([\d,]+)\s*XP:\s*([\d,]+)\/([\d,]+)/);
                     
                     if (statsMatch) {
@@ -271,7 +271,7 @@ class OwoBot {
                         const maxXP = statsMatch[3];
                         this.stats.xpAmount = `Rank: #${rank} | XP: ${currentXP}/${maxXP}`;
                     } else {
-                        // İkinci format için kontrol
+                        // 2. format kontrolü
                         statsMatch = text.match(/XP:\s*([\d,]+)\/([\d,]+)/);
                         if (statsMatch) {
                             const currentXP = statsMatch[1];
@@ -330,7 +330,7 @@ class OwoBot {
     }
 }
 
-// Botları başlat
+// başlatma 
 async function startBots() {
     const bots = config.bots;
     if (bots.length === 0) {
@@ -338,11 +338,12 @@ async function startBots() {
         return;
     }
     
-    // İlk botu ana bot olarak başlat
+    // ana bot
     new OwoBot(bots[0], true);
     
-    // İkinci botu başlat
+    // ikinci bot ve devamı
     new OwoBot(bots[1], false);
 }
+
 
 startBots().catch(console.error); 
