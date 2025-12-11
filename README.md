@@ -1,25 +1,22 @@
-# Owo Create Botu
+# Owo xp ve daily Botu
 
-Discord'daki için otomatik "owo create" komutu spamlayan bir bottur. Bu araç, sürekli `owo create` komutu göndererek kasa (daily crate) toplamanıza yardımcı olur.
-
-## 🚀 Özellikler
+## Özellikler
 
 - Otomatik olarak `owo create, owo hunt, owo battle` komutunu gönderir.
 - Belirli aralıklarla çalışır.
 - Kolay kullanım — yüzlerce token ile çalışabilir.
 
-## 🧠 Gereksinimler
+## Gereksinimler
 
-- Python 3.8 veya üzeri
+- Python 3.8 veya üzeri gerekli
 - `discord.py-self` kütüphanesi
 - `dicord.js` kütüpanesi
 
-## 🛠️ Kurulum
+## Kurulum
 
 ```bash
-# Repo'yu klonla
 git clone https://github.com/execute1337x/Owo-create-bot.git
 cd Owo-create-bot
 
-# Gerekli kütüphaneleri yükle
+# yüklenecek kütüpaneler
 pip install -r requirements.txt
